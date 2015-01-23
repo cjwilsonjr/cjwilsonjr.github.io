@@ -18,3 +18,27 @@ main {
 p {
     text-indent: 40px;
 }
+
+#fix {
+  position: fixed;
+  font-family: comic;
+  color: green;
+  bottom: 0px;
+  left: 10px;
+}
+
+#relative {
+  position: relative;
+  font-family: comic;
+  color: red;
+  left: 500px;
+  bottom: 20px;
+}
+
+#absolute {
+  position: absolute;
+  font-family: comic;
+  color: blue;
+  left: 600px;
+  bottom: 50px;
+}
