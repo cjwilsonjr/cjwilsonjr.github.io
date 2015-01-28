@@ -42,3 +42,14 @@ p {
   left: 600px;
   bottom: 50px;
 }
+
+#return{
+text-align: center;
+margin-right: auto;
+margin-left: auto;
+font-weight: bold;
+}
+
+section p a {
+  font-weight: bold;
+}
