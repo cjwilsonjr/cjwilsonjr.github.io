@@ -1,0 +1,42 @@
+h2{
+    border: black solid;
+    padding: 10px;
+    text-align: center;
+    width: 600px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: red;
+}
+
+h3{
+    text-align: center;
+}
+
+#stock-photo{
+  float:right;
+}
+
+
+#Contact-Us{
+    float:right;
+    position:absolute;
+    left: 500px;
+    top: 550px;
+    border:black solid;
+    padding:10px;
+    background-color: red;
+}
+
+.Paragraph{
+  border:black solid;
+  padding:10px;
+  margin-right:50px;
+  width:300px;
+  background-color: white;
+}
+
+body {
+  font-family: georgia;
+  background-color: #9debe9;
+}
+
