@@ -1,18 +1,17 @@
 #header {
     text-align: center;
-    border-bottom: 1px solid black;
-    margin: 0px;
+    margin:0;
 }
 
+
 h1,h3,h4 {
-    margin: 5px;
+    margin: 0;
 }
 
 main {
-    width: 90%;
+    width: 100%;
     margin-left:auto;
     margin-right:auto;
-    border: 1px black solid;
 }
 
 p {
@@ -53,3 +52,4 @@ font-weight: bold;
 section p a {
   font-weight: bold;
 }
+

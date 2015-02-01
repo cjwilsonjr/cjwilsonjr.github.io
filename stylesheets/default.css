@@ -2,26 +2,31 @@ html, body, main {
   font-family: athelas;
   margin:0;
   padding: 0;
-  background-color: #e6dedc;
-
+  background-color: #ededde;
+max-width: 100%;
 }
 
 header {
   color:white;
-background-color: #5cb58d;
+background-color: #4a915f;
 text-align: center;
- border-bottom: black solid 1px
+ border-bottom: black solid 1px;
  margin: 0;
  padding: 0;
 position: relative;
  width: 100%;
-height: 10%;
+
 }
 
 header h1 {
   margin: 0;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+header h4 {
+  margin-top:0;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
 header ul {
   list-style-type: none;
   margin: 0;
@@ -31,9 +36,9 @@ header ul {
   left: 0;
   bottom: 0;
   display: inline;
-  width: 101%;
-  background-color: gray;
-  border: black solid 1px;
+  width: 100%;
+  background-color: #b5caca;
+  border-top: black solid 1px;
 }
 
 header ul li {
@@ -41,7 +46,6 @@ header ul li {
   text-decoration: none;
   margin: 20px;
 }
-
 
 a:link {
   text-decoration: none;
@@ -56,34 +60,49 @@ font-style: italic;
 }
 footer {
   color:white;
-  background-color: #5cb58d;
+  background-color: #4a915f;
   text-align: left;
   position: absolute;
   left:0;
 bottom: 0;
-width: 101%;
+width: 100%;
   clear: both;
-  border:1px solid black;
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .intro  {
-  width: 75%;
-  display: inline-block;
-  background-color: #e6dedc;
+  background-color: #ededde;
   color: black;
+  position: relative;
+max-width: 100%;
+}
+#indexlink{
+  position: absolute;
+  display: inline-block;
+  right:0;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.sidebar {
-  width: 25%;
+#sidebar {
+  position: absolute;
   display: inline-block;
-  float: right;
-  background-color: #e6dedc;
-  color: black;
+left:0;
+ width:auto;
 }
+#indexlink h2{text-align: center;}
 
-.sidebar a{
+#sidebar a{
   color: black;
   }
+
+#sidebar img {
+  border-bottom: black solid 1px;
+  border-right: black solid 1px;
+}
 
 .intro ul li a {
   color:black;
