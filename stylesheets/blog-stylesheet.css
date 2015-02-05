@@ -49,7 +49,10 @@ margin-left: auto;
 font-weight: bold;
 }
 
-div  a {
-  font-weight: bold;
+div a {
+  font-weight: bolder;
 }
 
+pre {
+  color: blue;
+}
