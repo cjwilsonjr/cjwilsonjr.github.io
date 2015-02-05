@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+  <title>My Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+   <header>
+      <h1>CJ Wilson</h1>
+      <h4>From Zero to Zen: Software Development is Practice</h4>
+      <ul>
+        <li><a href="https://cjwilsonjr.github.io/index.html">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="https://cjwilsonjr.github.io/blog/index.html">Blog</a></li>
+        <li><a href="https://www.twitter.com/heycjwilson">Twitter</a></li>
+        <li><a href="https://www.linkedin.com/in/cjwilsonjr/">LinkedIn</a></li>
+        <li><a href="https://github.com/cjwilsonjr">GitHub</a></li>
+      </ul>
+    </header>
+  <div id="header">
+      <h1>Enumerable#map</h1>
+      <h3>I Could Use a Map</h3>
+      <h4>February 4, 2015</h4>
+  </div>
+  <div>
+    <p>
+    What is "Enumerable" anyway?  Enumerable is a type of Ruby class that contains methods that sort, search, and traverse over each element of a collection of data in an array.  <a href="http://ruby-doc.org/core-2.2.0/Enumerable.html">The Enumerable Ruby Docs</a> lists all these handy methods for your viewing pleasure.  In this post I'll specificially expound upon the #map method and why you may want to use it in your code.
+    </p>
+    <p>
+        The Enumerable method #map(synonymous with #collect) is used to create a transformed copy of an array without altering the original one.  For instance in the code snippet below, I want to create a new array filled each individual element of the original in its own array.  By calling <code>#map</code> on each element of the array, converting each to a string, and calling the method <code>#split</code>, I am able to save my desired result as <code>new_array</code>.  To prove that the original array is intact, I print both the old and the new.<pre>array = ["cat","rabbit","lynx",2,"alligator"]
+=> ["cat", "rabbit", "lynx", 2, "alligator"]
+new_array=array.map{|word|word.to_s.split}
+=> [["cat"], ["rabbit"], ["lynx"], ["2"], ["alligator"]]
+array
+=> ["cat", "rabbit", "lynx", 2, "alligator"]
+new_array
+=> [["cat"], ["rabbit"], ["lynx"], ["2"], ["alligator"]]</pre>
+Simply put #map is an efficient way to transform elements of an array without altering the original.
+</p>
+<p>
+However map does have a destructive brother that will alter the original array.  You may speak to him by calling #map! on your array. In the example below, #map! literally changes the array.  This destructive version of #map adds 2 to each element of the array.  When we check the contents of the array again, the original values have been replaced with larger numbers.<pre>array = [1,2,3,4,5]
+=> [1, 2, 3, 4, 5]
+array.map!{|num|num+2}
+=> [3, 4, 5, 6, 7]</pre>
+</p>
+<p>
+        Some of you may be asking how this is different from the #each method.  #map is actually closely related to it; the main difference is that #map actually returns the modified values in an new array.  Calling #each to transform an array doesn't do the trick.  Below I invoke #each on an array and add 2 to each element.  The issue is that the #each method not change the actual element; it just executes the command it is given then returns the original array.<pre>array = [1,2,3,4,5]
+=> [1, 2, 3, 4, 5]
+array.each {|num| num + 2}
+=> [1, 2, 3, 4, 5]
+puts array.join(",")
+=>1,2,3,4,5
+</pre>
+Overall we've learned that Enumerable methods are fantastic for condensing several lines of code into a beautiful solution and can be great for refactoring confusing or inelegant code.  Additionally I hope I've illuminated how #map works and why it's useful.  Again please consult <a href="http://ruby-doc.org/core-2.2.0/Enumerable.html">the Enumerable Ruby Docs</a> for more awesome methods.
+      </p>
+  </div>
+<p id="return"><a href="https://cjwilsonjr.github.io/blog/index.html">Return to Blog Index</a></p>
+<div id="footer">
+<footer><p>Thank you for visiting!
+      Dev Bootcamp 2015</p>
+    </footer></div>
+</main>
+
