@@ -55,4 +55,11 @@ div a {
 
 pre {
   color: blue;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+div p {
+  margin-left: 10px;
+  margin-right: 10px;
 }
