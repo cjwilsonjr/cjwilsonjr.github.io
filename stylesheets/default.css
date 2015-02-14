@@ -62,7 +62,7 @@ font-style: italic;
 footer {
   color:white;
   background-color: #4a915f;
-  text-align: left;
+
   position: absolute;
   left:0;
 bottom:0;
@@ -71,6 +71,7 @@ width: 100%;
   border-top:1px solid black;
   border-bottom:1px solid black;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  display: inline-block;
 }
 
 #footer footer {
@@ -97,19 +98,33 @@ max-width: 100%;
 
 #sidebar {
   position: absolute;
+  list-style-type: none;
   display: inline-block;
 left:0;
  width:auto;
+ border: none;
 }
+
+#sidebar ul img{
+border:none;
+}
+
 #indexlink h2{text-align: center;}
 
-#sidebar a{
-  color: black;
-  }
 
 #sidebar img {
   border-bottom: black solid 1px;
   border-right: black solid 1px;
+  list-style-type: none;
+}
+
+#social {
+  list-style-type: none;
+}
+
+#social li {
+    margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .intro ul li a {
