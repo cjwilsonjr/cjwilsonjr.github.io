@@ -3,11 +3,17 @@
     margin:0;
 }
 
-
-h1,h3,h4 {
+#header h1 {
     margin: 0;
 }
 
+#header h3 {
+    margin: 0;
+}
+
+#header h4 {
+    margin: 0;
+}
 main {
     width: 100%;
     margin-left:auto;
@@ -17,6 +23,8 @@ main {
 p {
     text-indent: 40px;
 }
+
+#footer p {text-indent: 0px;}
 
 #fix {
   position: fixed;

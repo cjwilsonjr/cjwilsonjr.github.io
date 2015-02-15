@@ -62,7 +62,6 @@ font-style: italic;
 footer {
   color:white;
   background-color: #4a915f;
-
   position: absolute;
   left:0;
 bottom:0;
@@ -80,6 +79,8 @@ width: 100%;
   left:auto;
   max-width:100%;
 }
+
+footer p {margin-left: 10px;}
 
 .intro  {
   background-color: #ededde;
