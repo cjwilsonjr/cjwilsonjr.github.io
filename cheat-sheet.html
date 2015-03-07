@@ -1,0 +1,134 @@
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Cheat Sheet</title>
+<link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/cheat-sheet.css">
+</head>
+
+<body>
+  <header>
+      <h1>CJ Wilson</h1>
+      <h4>From Zero to Zen: Software Development is Practice</h4>
+      <ul>
+        <li><a href="https://cjwilsonjr.github.io/index.html">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="https://cjwilsonjr.github.io/blog/index.html">Blog</a></li>
+        <li><a href="https://www.twitter.com/heycjwilson">Twitter</a></li>
+        <li><a href="https://www.linkedin.com/in/cjwilsonjr/">LinkedIn</a></li>
+        <li><a href="https://github.com/cjwilsonjr">GitHub</a></li>
+      </ul>
+  </header>
+<div id="wrapper">
+  <div class="nav">
+    <p>Methods List</p>
+    <ul>
+      <li>
+        <a href="#all?">#all?</a>
+      </li>
+        <li>
+          <a href="#each">#each</a>
+      </li>
+      <li>
+        <a href="#inject">#inject</a>
+      </li>
+       <li>
+          <a href="#map">#map</a>
+      </li>
+       <li>
+          <a href="#select">#select</a>
+      </li>
+    </ul>
+  </div>
+
+  <div id="main">
+    <div id="summary">
+      <h1>Cheat Sheet: Ruby Enumerables</h1>
+    <!-- Ruby logo image -->
+    <h3>Enumerable Methods</h3>
+    <p>
+      Enumerable is a type of Ruby class that contains methods that sort, search, and traverse over each element of a collection of data in an array.  <a href="http://ruby-doc.org/core-2.2.0/Enumerable.html">The Enumerable Ruby Docs</a> lists all these handy methods for your viewing pleasure.
+    </p>
+  </div>
+
+    <div class="method">
+      <a name="all?"></a>
+      <h4>#all?</h4>
+      <p>
+        This method passes each element of the object to the block and returns true if the block never returns false.  This is a good method to check if a collection of elements all have the same property.
+      </p>
+      <div class="code">
+        <pre>numbers=[1,2,3,4,5]
+numbers.all? {|num| num >=0 }
+=> true
+        </pre>
+      </div>
+    </div>
+
+
+    <div class="method">
+      <a name="each"></a>
+      <h4>#each</h4>
+      <p>
+        The #each method is an effective replacement for a for loop.  This method calls the block of code once for every element in self (in this case the array) and returns the original self object.  See #map for a method to return a new value based on the block.
+      </p>
+      <div class="code">
+        <pre>array=["This","is","a","demonstration"]array.each {|element| puts element}
+=> This
+=> is
+=> a
+=> demonstration
+        </pre>
+      </div>
+    </div>
+
+    <div class="method">
+      <a name="inject"></a>
+      <h4>#inject</h4>
+      <p>
+        This method combines all elements of an our object (array) using the command inside the block.  The first element in the block (sum) is called the accumulator value.  Each element in the block (num) is passed to the accumulator.  At the end of the iteration, the final value (sum) is returned.I think about inject by using it to sum numbers.  The second element in the block alters the previous element.
+      </p>
+      <div class="code">
+        <pre>numbers=[1,2,3,4,5]
+numbers.inject {|sum,num| sum + num}
+=> 15
+        </pre>
+      </div>
+    </div>
+
+
+    <div class="method">
+      <a name="map"></a>
+      <h4>#map</h4>
+      <p>
+        This method is similar to #each except it actually returns a new array containing the results of running the block on each element of the object passed through.
+      </p>
+      <div class="code">
+        <pre>numbers=[1,2,3,4,5]
+numbers.map {|num| num * 2}
+=> [2, 4, 6, 8, 10]
+        </pre>
+      </div>
+    </div>
+
+    <div class="method">
+      <a name="select"></a>
+      <h4>#select</h4>
+      <p>
+        This method returns an array containing all elements for which the block evaluates as true.  In the example below, #select searches each element of the array for a length >=3.  If this evaluates true, the element is included in the new array to be returned.
+      </p>
+      <div class="code">
+        <pre>array=["This","is","a","demonstration"]
+array.select {|element| element.length >=3}
+=> ["This", "demonstration"]
+        </pre>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+</body>
+</html>
