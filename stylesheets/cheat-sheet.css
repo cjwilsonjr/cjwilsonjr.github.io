@@ -1,4 +1,9 @@
-.nav {
+html {height:100%;}
+body {height:100%;}
+#wrapper {width:100%;}
+
+
+#nav {
   float:left;
   width:10%;
   min-width: 100px;
@@ -45,3 +50,9 @@ pre {
   white-space: pre-wrap;
 }
 
+#footer footer {
+  position: relative;
+  bottom:auto;
+  left:auto;
+  max-width:100%;
+}
