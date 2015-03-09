@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+  <title>My Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+   <header>
+      <h1>CJ Wilson</h1>
+      <h4>From Zero to Zen: Software Development is Practice</h4>
+      <ul>
+        <li><a href="https://cjwilsonjr.github.io/index.html">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="https://cjwilsonjr.github.io/blog/index.html">Blog</a></li>
+        <li><a href="https://www.twitter.com/heycjwilson">Twitter</a></li>
+        <li><a href="https://www.linkedin.com/in/cjwilsonjr/">LinkedIn</a></li>
+        <li><a href="https://github.com/cjwilsonjr">GitHub</a></li>
+      </ul>
+    </header>
+  <div id="header">
+      <h1>Ruby Classes</h1>
+      <h3>Meet My Musicians</h3>
+      <h4>February 12, 2015</h4>
+  </div>
+  <div>
+    <p>
+      Welcome to my introduction of Ruby classes.  We know that Ruby is an object-oriented programming language, but beginners may struggle to understand what that signifies.  Object-oriented languages are made up of classes and objects.  A class creates the basic layout of an object in Ruby.  Objects receive information and perform tasks based on that information you give.  In Ruby an object is an instance of a class.  Today I've created a Ruby class called Musicians.  These musicians are all similar--they have the same set of skills and know the same things about themselves, but each musician is a little different.  For example my musicians know that they can have a name, an instrument, and a song to play.  Each different musician is an instance of the class Musicians. Whenever I want my class object to take parameters, I define an initialize method that runs at the beginning of each new object creation.  This allows each new object to have the same parameters, but the value of those parameters could change based on what values you assign.  In the code below, I have defined my <code>class Musician</code> and defined my initialize method with parameters of name, instrument, and song.  Hold on a second... what are those weird @ symbols in front of the variable names?  Ruby classes have four different variable types(local, instance, class, and global), and this specific one is called an instance variable.  By assigning @name to the variable name, I'm telling my code to allow other methods within this object to use these values.  The instance variables' values will change based on the parameters entered for a new object.  Lastly outside of the class definition, I create three new musicians, each with their own specific parameter values.
+    <pre>
+    <code>
+class Musician
+  def initialize(name, instrument, song)
+    @name=name #instance variable
+    @instrument=instrument #instance variable
+    @song=song #instance variable
+  end
+end
+
+neil=Musician.new("Neil Young","Martin D-45","Old Man")
+
+bob=Musician.new("Bob Dylan","Martin OO-21","Blowin' in the Wind")
+
+jimi=Musician.new("Jimi Hendrix","Fender Stratocaster","Little Wing")
+    </code>
+  </pre>
+  </p>
+  <p>
+    After defining the initialize method, I want to define some methods to make my musicians do some cool actions.  In the first method, introduction, I simply want my musician to introduce himself.  I can use string interpolation with instances variables to print a brief statement.  Because I used instance variables here, my method can read the values of the name, song, and instrument defined in the initialize method.  Now I reuse these values throughout all my methods in this class without redefining them within each method.  Pretty neat, huh?  The second method, backhanded_compliment, displays the cheeky side of my musicians.  After all, musicians aren't always the most well-reputed folks around.  Here I use three simple if statements mixed with string interpolation and instances variables to create a personalized "compliment" pun for each of my musicians.  Hey, at least they were nice enough to introduce themselves without a fuss!
+        <pre>
+    <code>
+  def introduction
+    p "My name is #{@name}, and I will perform #{@song} for you on my #{@instrument}."
+  end
+
+  def backhanded_compliment
+    p "Before I begin, I'd like to say that you look very distinguished for an #{@song}." if @name == "Neil Young"
+    p "Before I begin, I'd like to say that your toupe looks resilient enough not to go #{@song}." if @name == "Bob Dylan"
+    p "Before I begin, I want to say that I think it's cool that you refer to the growth <br>       sprouting on your back as a #{@song}." if @name == "Jimi Hendrix"
+  end
+    </code>
+  </pre>
+  </p>
+  <p>
+    The complete body of code looks as follows:
+    <pre>
+    <code>
+class Musician
+  def initialize(name, instrument, song)
+    @name=name #instance variable
+    @instrument=instrument #instance variable
+    @song=song #instance variable
+  end
+
+  def introduction
+    p "My name is #{@name}, and I will perform #{@song} for you on my #{@instrument}."
+  end
+
+  def backhanded_compliment
+    p "Before I begin, I'd like to say that you look very distinguished for an #{@song}." if @name == "Neil Young"
+    p "Before I begin, I'd like to say that your toupe looks resilient enough not to go #{@song}." if @name == "Bob Dylan"
+    p "Before I begin, I want to say I think it's cool that you refer to the growth <br>       sprouting on your back as a #{@song}." if @name == "Jimi Hendrix"
+  end
+end
+</pre>
+</code>
+</p>
+<p>
+Now let's see the code in action.  I've supplied the code for the creation of the musicians, the calling of the methods on each, and the results of each method call.  To call a method simply type the name of the object followed by a . and the actual name of the method.  Ladies and gentlemen, it's my pleasure and honor to introduce three of the finest musicians to have ever walked the earth, Neil Young, Bob Dylan, and Jimi Hendrix!
+<code>
+<pre>
+neil=Musician.new("Neil Young","Martin D-45","Old Man")
+neil.introduction
+neil.backhanded_compliment
+
+=>"My name is Neil Young, and I will perform Old Man for you on my Martin D-45."
+=>"Before I begin, I'd like to say that you look very distinguished for an Old Man."
+
+bob=Musician.new("Bob Dylan","Martin OO-21","Blowin' in the Wind")
+bob.introduction
+bob.backhanded_compliment
+=>"My name is Bob Dylan, and I will perform Blowin' in the Wind for you on my Martin OO-21."
+=>"Before I begin, I'd like to say that your toupe looks resilient enough not to go Blowin' in the Wind."
+
+jimi=Musician.new("Jimi Hendrix","Fender Stratocaster","Little Wing")
+jimi.introduction
+jimi.backhanded_compliment
+=>"My name is Jimi Hendrix, and I will perform Little Wing for you on my Fender Stratocaster."
+=>"Before I begin, I want to say I think it's cool that you refer to the growth sprouting on your back as a Little Wing."
+</code>
+</pre>
+    Thank you for coming to the show!
+      </p>
+  </div>
+<p id="return"><a href="https://cjwilsonjr.github.io/blog/index.html">Return to Blog Index</a></p>
+<div id="footer">
+<footer><p>Thank you for visiting!
+      Dev Bootcamp 2015</p>
+    </footer></div>
+</main>
+

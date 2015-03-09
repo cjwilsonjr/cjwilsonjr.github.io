@@ -1,0 +1,58 @@
+html {height:100%;}
+body {height:100%;}
+#wrapper {width:100%;}
+
+
+#nav {
+  float:left;
+  width:10%;
+  min-width: 100px;
+  border-right: 1px dotted black;
+  border-bottom: 1px dotted black;
+  /*height:100%;*/
+  overflow: hidden;
+  background-color: #b5caca;
+}
+.nav p {
+  text-align: center;
+}
+
+.nav li {
+  margin-bottom: .3em;
+}
+
+#main {
+  overflow: hidden;
+  width:auto;
+}
+
+#summary {
+  text-align: center;
+}
+
+#summary a {font-weight: bold;}
+
+.method {
+  text-align: center
+  width:100%;
+  margin: 3%;
+}
+
+.code {
+  background-color: black;
+  color: #00FF00;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding: 5px;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+#footer footer {
+  position: relative;
+  bottom:auto;
+  left:auto;
+  max-width:100%;
+}

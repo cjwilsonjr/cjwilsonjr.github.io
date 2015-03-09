@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+  <title>My Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+   <header>
+      <h1>CJ Wilson</h1>
+      <h4>From Zero to Zen: Software Development is Practice</h4>
+      <ul>
+        <li><a href="https://cjwilsonjr.github.io/index.html">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="https://cjwilsonjr.github.io/blog/index.html">Blog</a></li>
+        <li><a href="https://www.twitter.com/heycjwilson">Twitter</a></li>
+        <li><a href="https://www.linkedin.com/in/cjwilsonjr/">LinkedIn</a></li>
+        <li><a href="https://github.com/cjwilsonjr">GitHub</a></li>
+      </ul>
+    </header>
+  <div id="header">
+      <h1>Computer Memory</h1>
+      <h3>A Brief Introduction</h3>
+      <h4>March 4, 2015</h4>
+  </div>
+  <div>
+    <p>
+      Computers are so ubiquitious that users generally expect them to operate without a hitch, but do many even understand the basics of the components working behind the scenes?  It's astounding how much computing power is stored right beneath my typing fingertips squeezed into a 2 inch thick hunk of metal not much larger than a piece of paper.  Hell even my phone is more powerful than the supercomputers that helped send men to the Moon in 1969.  I have a pretty shallow understanding of a computer's general operations myself.  A few days ago my friend asked me what the difference was between a hard disk drive and a solid state drive.  When I couldn't give a very satisfactory answer, I knew it was time to delve deeper into the inner workings of the tools I use daily.  Computer memory is as good a place as any to renew this goal.  Here I'll explore what memory is and the basics of RAM, hard drives, and caches.
+    </p>
+      <p>
+        Memory refers to any type of electronic storage, but it is most commonly used to refer to the fast and temporary storage areas.  RAM (Random Access Memory) is the most common temporary memory.  This fast-action sort of memory allows the main processing unit of the computer (CPU) to access the information it needs much quicker than checking a permanent form of storage like a hard disk drive.  RAM is especially useful because the CPU can access the data "randomly" (in no particular order) if it knows where the data is stored.  Many processes like loading applications, files, and the main operating system (Windows, Linux, Mac OSX) are first passed through the RAM for quick access.  Typically only crucial parts of the application or OS are stored to conserve usage and maintain speed.  This fast memory is dynamic enough to store only what's necessary and load more only when needed.  For instance when an application is closed, the RAM will virtually wipe the data it was just using to make room for more incoming data.  When the computer is turned off, the temporary memory is wiped clean.  The CPU and RAM communicate millions of times every second to send and check information.  Memory is an operation-optimizing expert!
+      </p>
+      <p>
+        However useful RAM may be, it typically isn't fast enough to keep up with the speed of the CPU; that's where the computer's cache comes into play.  The cache is basically a very small sub-level of memory--it makes the data used most frequently by the CPU available instantly.  This alleviates the traffic-jam of communication between the CPU and RAM.
+      </p>
+      <p>
+        Permanent storage is another important stage in a computer's memory process.  Based on personal experience if I were to ask someone how much memory they have on their computer, they would respond with the amount of free gigabytes on their hard drive.  Finalized files and applications are stored on the hard drive when not in use.  For example when a user is editing a text file, the RAM is storing this file for quick access.  Once he has saved and closed this file, it is written to the hard drive and wiped from the RAM.  Additionally the hard drive is responsible for booting up your system.  After this brief explanation of hard drives, I'll attempt to answer the question of solid state drives vs. hard disk drives.  Both types of drives have the same responsibilites and do the same tasks, but a SSD is typically faster, quieter, and more durable but naturally more expensive because of these advantages. A SSD is made of connected flash memory chips that retain data even when the computer is turned off unlike the more mechanical structure of an HDD.  This allows the drive to boot much faster and maintain this performance while in use more efficiently than a normal hard disk drive.  The SSD has no physically moving parts, so it has a smaller likelihood of breaking when dropped.
+      </p>
+      <center><img src="computer-memory-pyramid.gif"></center>
+      <p>
+        Resources:<br>
+        Tyson, Jeff.  "How Computer Memory Works"  23 August 2000.  HowStuffWorks.com. <a href="http://computer.howstuffworks.com/computer-memory.htm">http://computer.howstuffworks.com/computer-memory.htm</a>  05 March 2015.<br>
+        <a href="http://www.pcmag.com/article2/0,2817,2404258,00.asp">http://www.pcmag.com/article2/0,2817,2404258,00.asp
+        </a>
+      </p>
+
+  </div>
+<p id="return"><a href="https://cjwilsonjr.github.io/blog/index.html">Return to Blog Index</a></p>
+<div id="footer">
+<footer>
+  <p>
+    Thank you for visiting!
+      Dev Bootcamp 2015
+    </p>
+    </footer></div>
+</main>
+

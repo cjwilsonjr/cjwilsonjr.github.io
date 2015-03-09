@@ -1,0 +1,73 @@
+#header {
+    text-align: center;
+    margin:0;
+}
+
+#header h1 {
+    margin: 0;
+}
+
+#header h3 {
+    margin: 0;
+}
+
+#header h4 {
+    margin: 0;
+}
+main {
+    width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+p {
+    text-indent: 40px;
+}
+
+#footer p {text-indent: 0px;}
+
+#fix {
+  position: fixed;
+  font-family: comic;
+  color: green;
+  bottom: 0px;
+  left: 10px;
+}
+
+#relative {
+  position: relative;
+  font-family: comic;
+  color: red;
+  left: 500px;
+  bottom: 20px;
+}
+
+#absolute {
+  position: absolute;
+  font-family: comic;
+  color: blue;
+  left: 600px;
+  bottom: 50px;
+}
+
+#return{
+text-align: center;
+margin-right: auto;
+margin-left: auto;
+font-weight: bold;
+}
+
+div a {
+  font-weight: bolder;
+}
+
+pre {
+  color: blue;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+div p {
+  margin-left: 10px;
+  margin-right: 10px;
+}

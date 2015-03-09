@@ -1,0 +1,133 @@
+html, body, main {
+  font-family: athelas;
+  margin:0;
+  padding: 0;
+  background-color: #ededde;
+max-width: 100%;
+}
+
+header {
+  color:white;
+background-color: #4a915f;
+text-align: center;
+border-top: black solid 1px;
+ border-bottom: black solid 1px;
+ margin: 0;
+ padding: 0;
+position: relative;
+ width: 100%;
+
+}
+
+header h1 {
+  margin: 0;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+header h4 {
+  margin-top:0;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: inline;
+  width: 100%;
+  background-color: #b5caca;
+  border-top: black solid 1px;
+}
+
+header ul li {
+  display: inline;
+  text-decoration: none;
+  margin: 20px;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+font-style: italic;
+}
+  a:visited {
+    color: black;
+}
+footer {
+  color:white;
+  background-color: #4a915f;
+  position: absolute;
+  left:0;
+bottom:0;
+width: 100%;
+  clear: both;
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  display: inline-block;
+}
+
+#footer footer {
+  position: relative;
+  bottom:auto;
+  left:auto;
+  max-width:100%;
+}
+
+footer p {margin-left: 10px;}
+
+.intro  {
+  background-color: #ededde;
+  color: black;
+  position: relative;
+max-width: 100%;
+}
+#indexlink{
+  position: absolute;
+  display: inline-block;
+  right:0;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#sidebar {
+  position: absolute;
+  list-style-type: none;
+  display: inline-block;
+left:0;
+ width:auto;
+ border: none;
+}
+
+#sidebar ul img{
+border:none;
+}
+
+#indexlink h2{text-align: center;}
+
+
+#sidebar img {
+  border-bottom: black solid 1px;
+  border-right: black solid 1px;
+  list-style-type: none;
+}
+
+#social {
+  list-style-type: none;
+}
+
+#social li {
+    margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.intro ul li a {
+  color:black;
+}

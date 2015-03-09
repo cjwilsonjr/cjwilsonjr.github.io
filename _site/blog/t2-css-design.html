@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+  <title>CSS Design</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+  <header>
+      <h1>CJ Wilson</h1>
+      <h4>From Zero to Zen: Software Development is Practice</h4>
+      <ul>
+        <li><a href="https://cjwilsonjr.github.io/index.html">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="https://cjwilsonjr.github.io/blog/index.html">Blog</a></li>
+        <li><a href="https://www.twitter.com/heycjwilson">Twitter</a></li>
+        <li><a href="https://www.linkedin.com/in/cjwilsonjr/">LinkedIn</a></li>
+        <li><a href="https://github.com/cjwilsonjr">GitHub</a></li>
+      </ul>
+    </header>
+  <div id="header">
+      <h1>Relative, Absolute, and Fixed Positioning
+</h1>
+      <h3>My Head Hurts</h3>
+      <h4>January 21, 2015</h4>
+  </div>
+  <div>
+    <p>
+    HTML (Hyper Text Markup Language and CSS (Cascading Style Sheets) are the ubiquitous programming languages that lay the foundation for websites.  From my experience, they are tied at the hip.  They compliment each other so well that at present I can’t envision a scenario where I would use one without the other.  In a nut shell HTML provides the basic skeleton (headers, footers, paragraphs, links etc.) for a site, and CSS adds the fancy fonts and styles to the HTML.  CSS is housed in files called stylesheets that can be linked to any page through an HTML command.  The great thing about these stylesheets is that you can use the same one for multiple pages, so if you have a specific layout for every page within your site, you can easily style every page the same by linking to your stylesheet.  It’s a huge time saver.  For those of you who aren’t familiar with relative, absolute, and fixed positioning, these are specific values you can set in CSS to position any element on a page.  These three position values gave me a bit of trouble, so my goal is to save you some time wasted scratching your head so you can spend more time practicing with these concepts to truly understand them.
+    </p>
+    <p>
+      Once basic elements for a site have been set through HTML, their positions can change through the position values relative, absolute, and fixed.  By default elements are in a “static” position, which just means that it remains in its current position in the flow of the page.  A “relative” value positions the element relative to its "static" position.  Using this value will force the element to position itself relative to the parameters you set in your code. In the example below, I wanted my "Relative element" to move 500 pixels to the right.  To do this in CSS I simply set my left parameter to 500 pixels ({left: 500px;}) to tell my element to move 500px away from its left boundary.  Pretty neat, huh?<p id="relative">Relative element</p>
+    </p>
+    <p>
+      <p id="absolute">Absolute element</p>
+
+      "Absolute" positioning is a little more complicated.  An "Absolute" element's position is based on its nearest positioned ancestor, which is a fancy way of saying that it bases its position on the last positioned element in your code, whether it be fixed, relative, or absolute.  If no ancestor exists, it will relate to the body of the page.  Because the last positioned element was set to "relative" in the example above, my "absolute" element below positions itself based on that.  An absolute element has no regard for other existing information on the page.  With such fine-tuned control you can even put it on top of other text if you wanted to do so.
+      </p>
+
+  <p>
+  A “fixed” value is a little more intuitive; an element with this value will stick to the same position on the screen, even when scrolling.  A common example is the background image on Twitter.  As you scroll through you feed, have you ever noticed that your selected background never actually move?  That’s because it’s fixed.  It's great if you always want to display specific information on your page, but if used unwisely, it will likely annoy users (exhibit 1: the green text floating at the bottom left corner of this page).<p id="fix">Here is a fixed element</p>
+</p>
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </div>
+<p id="return"><a href="https://cjwilsonjr.github.io/blog/index.html">Return to Blog Index</a></p>
+<div id="footer">
+<footer><p>Thank you for visiting!
+      Dev Bootcamp 2015</p>
+    </footer>
+  </div>
+</main>
+

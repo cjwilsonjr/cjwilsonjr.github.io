@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+  <title>Arrays and Hashes</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+  <header>
+      <h1>CJ Wilson</h1>
+      <h4>From Zero to Zen: Software Development is Practice</h4>
+      <ul>
+        <li><a href="https://cjwilsonjr.github.io/index.html">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="https://cjwilsonjr.github.io/blog/index.html">Blog</a></li>
+        <li><a href="https://www.twitter.com/heycjwilson">Twitter</a></li>
+        <li><a href="https://www.linkedin.com/in/cjwilsonjr/">LinkedIn</a></li>
+        <li><a href="https://github.com/cjwilsonjr">GitHub</a></li>
+      </ul>
+    </header>
+
+  <div id="header">
+      <h1>Arrays and Hashes</h1>
+      <h3>What's the Difference?</h3>
+      <h4>January 27, 2015</h4>
+  </div>
+  <div>
+    <p>
+    Arrays and hashes are crucial methods of information storage in Ruby.  Both arrays and hashes store data in an list.  Both accept iterators (.each, .times etc.) that can perform a certain action a specific number of times or to each item in the array or hash.  It's easy to use the terms interchangeably, but there are subtle differences and advantages to each.  The following code represents unlikely but very possible examples of an array and a hash:
+    <pre>array_of_things=[1,2,"hello",3,4.55]
+hash_of_things={foodtype: "Indian", 1=>"one", nineteen: 64}</pre>
+     Arrays are lists of variables.  They have an interesting numbering system because the first data point is stored at 0 instead of 1; if I wanted to know what the first value of the array is, I would want to look to the "zeroth" position ([0,1,2,3 etc.]).  What position of an array do you think [-1] points to (hint: it's the last one)?  We refer to this ordering system as an array's index.  We can think of the integer of the index position as a key to a specific data point in an array.  You can store any type of object (string, integer, float etc.) inside an array.  To demonstrate this indexing system, check out the following code:<pre>array_of_things[3]
+=>3
+array_of_things[2]
+=>"Hello"</pre>  Notice how entering the index position [3] yields the fourth item in the array?  Don't forget about the "zeroth" position!  Array's are more efficient for creating ordered list with defined numbers as the index position.
+   </p>
+   <p>
+    Hashes are similar to arrays because they also store data.  This data can be stored as strings, numbers, floats etc. just like arrays.  But instead of storing data in a list like an array with an integer as the index position indicator, a hash uses key/value pairs as a container (think of an array's index as comparable to a hash's key).  A hash's key (index) can be any value, not just an integer like an array.  A value is linked to a certain key.  Inside a specific hash, a key must be unique, but a value may be repeated.  For example, if I want to store animal names (in symbol object form to save memory) as my keys, and I want to list something that they produce as the values, I would type something like this:<pre>animal_hash={cow: "milk", goat: "milk"}
+==>{:cow=>"beef", :goat=>"milk"}</pre>
+      If I were to try to assign two values to :cow, Ruby would assign the value of the second entry to the key:
+     <pre>animal_hash={cow: "milk", cow: "beef"}
+==>{cow:=>"beef"}</pre>
+    When would I want to use a hash?  Hashes are flexible and easy to use for storing data.  If I wanted to retrieve or store data with a key of my own choosing besides an integer, a hash would suit my needs well over an array.
+  </p>
+  <p>My review only skims the surface of the powers of hashes and arrays.  For more information I suggest checking out the <a href="http://ruby-doc.org/core-2.0.0/Array.html">Array Ruby Doc</a> and <a href="http://ruby-doc.org/core-2.0.0/Hash.html">Hash Ruby Doc</a> links for more detailed information on these subjects.
+  </div>
+<p id="return"><a href="https://cjwilsonjr.github.io/blog/index.html">Return to Blog Index</a></p>
+<div id="footer">
+<footer><p>Thank you for visiting!
+      Dev Bootcamp 2015</p>
+    </footer>
+  </div>
+</main>
+

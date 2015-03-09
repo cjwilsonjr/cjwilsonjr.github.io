@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+  <title>My Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+   <header>
+      <h1>CJ Wilson</h1>
+      <h4>From Zero to Zen: Software Development is Practice</h4>
+      <ul>
+        <li><a href="https://cjwilsonjr.github.io/index.html">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="https://cjwilsonjr.github.io/blog/index.html">Blog</a></li>
+        <li><a href="https://www.twitter.com/heycjwilson">Twitter</a></li>
+        <li><a href="https://www.linkedin.com/in/cjwilsonjr/">LinkedIn</a></li>
+        <li><a href="https://github.com/cjwilsonjr">GitHub</a></li>
+      </ul>
+    </header>
+  <div id="header">
+      <h1>Loops in JavaScript</h1>
+      <h3>Looping in Ruby vs. JavaScript</h3>
+      <h4>February 26, 2015</h4>
+  </div>
+  <div>
+    <p>
+    Loops, loops, and more loops--during my brief time programming, it's hard to recall a program I've written that didn't benefit from a loop.  Loops help programmers repeat sequences of code succinctly.  Simply put they're vital operators to most programs.  The two main types of loops are ones that perform an action a certain number of times and ones that perform an action until a condition is met.  Ruby and Javascript both perform these loops, but there are some differences worth reviewing.
+    </p>
+    <p>
+    Ruby has several built-in methods like <code>each, map, and times</code> to easily specify how many times to perform an action.  Take the following example: <pre><code>1..5.times {|x| puts "I like repeating myself in Ruby."}
+I like repeating myself in Ruby!
+I like repeating myself in Ruby!
+I like repeating myself in Ruby!
+I like repeating myself in Ruby!
+I like repeating myself in Ruby!</code></pre>Above I simply specify a range (1 through 5) and call the times method to perform whatever is inside the curly braces (block) for the specified number of times.  Pretty easy!  Additionally Ruby can perform an action until a specific condition is met.  Let's review a simple loop:<pre><code>num=0
+while num <=5 do
+puts num
+ num+=1
+end
+0
+1
+2
+3
+4
+5</code></pre>  Again we have another easy to read loop.  We define num as 0 and tell the program that we want to perform the body of the code while num is less than or equal to 5.  We put num then add 1 to the value of num for every iteration of the loop.  The loop stops once num=5.
+    </p>
+    <p>
+      Although the syntax is different, Javascript is certainly capable of handling loops.  The biggest difference between the two languages is that Javascript does not have numerous built in methods to iterate a certain number of times--the keyword <code>for</code> is the only available method to perform an action a certain number of times.  This unfortunately looks slightly more complicated at first glance.<pre>for (var x=0; x < 5; x++) {console.log("I like to repeat myself in Javascript!")};
+I like to repeat myself in Javascript!
+I like to repeat myself in Javascript!
+I like to repeat myself in Javascript!
+I like to repeat myself in Javascript!
+I like to repeat myself in Javascript!</pre>In the code above, we have an initialization statement (var x=0) that defines our variable in order to initialize a counter variable.  Next we have a condition (x < 5) that tells the code to execute when x is less than 5.  By default the condition statement will default to true.  If the condition is true, the code will execute.  Next we have our final-expression (x++) which tells the code what to do after each execution of the loop.  In this case, ++ adds 1 to x.  This is the same as saying x=+ 1, which we are familiar with from Ruby.  Finally we have our block of code that we want to perform for each iteration.
+    </p>
+    <p>
+      Javascript uses a while statement similar to Ruby; the main difference here is the syntax.  Below we define our variable num to equal 0.  Then we start our while statement--the conditional is inside parentheses immediately following the while.  Inside our block, we print out the value for num then add 1 to the value of num for each execution of the loop.  The code iterates through the loop for numbers 0-5 then returns the final value of num.<pre>var num=0;
+      while (num<=5) {
+      console.log(num)
+      num++;
+    }
+0
+1
+2
+3
+4
+5
+=>5
+    </pre>
+    Javascript looks daunting and confusing at first, but just like with Ruby, the more you use loops, the easier they become to write.  In a way Javascript has a pretty neat and clean way to type out a loop statement.  Onto more practice!
+    </p>
+  </div>
+<p id="return"><a href="https://cjwilsonjr.github.io/blog/index.html">Return to Blog Index</a></p>
+<div id="footer">
+<footer>
+  <p>
+    Thank you for visiting!
+      Dev Bootcamp 2015
+    </p>
+    </footer></div>
+</main>
+
