@@ -3,20 +3,19 @@ html, body, main {
   margin:0;
   padding: 0;
   background-color: #ededde;
-max-width: 100%;
+  max-width: 100%;
 }
 
 header {
   color:white;
-background-color: #4a915f;
-text-align: center;
-border-top: black solid 1px;
- border-bottom: black solid 1px;
- margin: 0;
- padding: 0;
-position: relative;
- width: 100%;
-
+  background-color: #4a915f;
+  text-align: center;
+  border-top: black solid 1px;
+  border-bottom: black solid 1px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
 }
 
 header h1 {
@@ -56,16 +55,18 @@ a:link {
 a:hover {
 font-style: italic;
 }
-  a:visited {
-    color: black;
+
+a:visited {
+  color: black;
 }
+
 footer {
   color:white;
   background-color: #4a915f;
   position: absolute;
   left:0;
-bottom:0;
-width: 100%;
+  bottom:0;
+  width: 100%;
   clear: both;
   border-top:1px solid black;
   border-bottom:1px solid black;
@@ -73,37 +74,45 @@ width: 100%;
   display: inline-block;
 }
 
-#footer footer {
+/*#footer footer {
   position: relative;
   bottom:auto;
   left:auto;
   max-width:100%;
-}
+}*/
 
-footer p {margin-left: 10px;}
+footer p {
+  margin-right: 10px;
+  text-align: right;}
 
-.intro  {
+#intro {
   background-color: #ededde;
   color: black;
-  position: relative;
-max-width: 100%;
+  /*position: relative;*/
+  width: 100%;
 }
+
 #indexlink{
-  position: absolute;
-  display: inline-block;
+  /*position: absolute;*/
+  float:left;
+  /*display: inline-block;*/
   right:0;
   width: 65%;
-  margin-left: auto;
+  margin-left: 3%;
   margin-right: auto;
+  overflow: hidden;
 }
 
 #sidebar {
-  position: absolute;
-  list-style-type: none;
-  display: inline-block;
-left:0;
- width:auto;
- border: none;
+  float:left;
+  /*position: absolute;*/
+  /*list-style-type: none;*/
+  /*display: inline-block;*/
+  left:0;
+  width:auto;
+  min-width: 150px;
+  overflow: hidden;
+  border: none;
 }
 
 #sidebar ul img{
@@ -119,15 +128,34 @@ border:none;
   list-style-type: none;
 }
 
+#sidebar h3 {text-align: center;}
+
 #social {
   list-style-type: none;
 }
 
 #social li {
+  text-align: center;
     margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.intro ul li a {
+#intro ul li a {
   color:black;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  /*right: 0;
+  left: 0;*/
+  bottom: 0;
+  display: inline;
+  width: 100%;
+}
+
+footer ul li {
+  display: inline;
+  margin:10px;
 }

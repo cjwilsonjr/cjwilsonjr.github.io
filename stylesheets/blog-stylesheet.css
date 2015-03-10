@@ -1,30 +1,71 @@
-#header {
+
+#title {
     text-align: center;
     margin:0;
 }
 
-#header h1 {
+#post {
+  float: left;
+  overflow: hidden;
+  width: 65%;
+  margin-top:5%;
+}
+
+#title h1 {
     margin: 0;
 }
 
-#header h3 {
+#title h3 {
     margin: 0;
 }
 
-#header h4 {
+/*#title h4 {
     margin: 0;
-}
-main {
+}*/
+
+body {
     width: 100%;
     margin-left:auto;
     margin-right:auto;
 }
 
-p {
+#post p {
     text-indent: 40px;
 }
 
-#footer p {text-indent: 0px;}
+/*footer p {margin-left:10px;}*/
+
+
+#return {
+text-align: center;
+margin-right: auto;
+margin-left: auto;
+font-weight: bold;
+}
+
+div a {
+  font-weight: bolder;
+}
+
+pre {
+  color: blue;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#post p {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+
+
+
+
+
+
+
+
 
 #fix {
   position: fixed;
@@ -50,24 +91,6 @@ p {
   bottom: 50px;
 }
 
-#return{
-text-align: center;
-margin-right: auto;
-margin-left: auto;
-font-weight: bold;
-}
 
-div a {
-  font-weight: bolder;
-}
 
-pre {
-  color: blue;
-  margin-left: 10px;
-  margin-right: 10px;
-}
 
-div p {
-  margin-left: 10px;
-  margin-right: 10px;
-}
