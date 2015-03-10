@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
   <title>My Blog</title>
   <meta charset="UTF-8">
@@ -6,27 +7,43 @@
   <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
 </head>
 
-<main>
-   <header>
-      <h1>CJ Wilson</h1>
-      <h4>From Zero to Zen: Software Development is Practice</h4>
-      <ul>
-        <li><a href="https://cjwilsonjr.github.io/index.html">Home</a></li>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="https://cjwilsonjr.github.io/blog/index.html">Blog</a></li>
-        <li><a href="https://www.twitter.com/heycjwilson">Twitter</a></li>
-        <li><a href="https://www.linkedin.com/in/cjwilsonjr/">LinkedIn</a></li>
-        <li><a href="https://github.com/cjwilsonjr">GitHub</a></li>
-      </ul>
-    </header>
-  <div id="header">
+<body>
+  <header>
+    <h1>CJ Wilson</h1>
+    <h4>From Zero to Zen: Software Development is Practice</h4>
+    <ul>
+      <li><a href="https://cjwilsonjr.github.io/index.html">Home</a></li>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="https://cjwilsonjr.github.io/blog/index.html">Blog</a></li>
+      <li><a href="https://www.twitter.com/heycjwilson">Twitter</a></li>
+      <li><a href="https://www.linkedin.com/in/cjwilsonjr/">LinkedIn</a></li>
+      <li><a href="https://github.com/cjwilsonjr">GitHub</a></li>
+    </ul>
+  </header>
+
+  <div id="intro">
+
+
+  <div id="sidebar">
+    <img src="siena.png" alt="Profile Picture">
+    <!-- <h3>Contact Me:</h3>
+    <ul id ="social">
+      <li><a href="mailto:christopher.wilson.jr@gmail.com"><img src="../45_free_icons/Without_Border/email.png" alt="Email"/></a></li>
+      <li><a href="https://www.twitter.com/heycjwilson"><img src="../45_free_icons/Without_Border/twitter.png" alt="Twitter"/></a></li>
+      <li><a href="https://www.linkedin.com/in/cjwilsonjr"><img src="../45_free_icons/Without_Border/linkedin.png " alt ="LinkedIn"/></a></li>
+      <li><a href="https://github.com/cjwilsonjr"><img src="../45_free_icons/Without_Border/github.png " alt="GitHub"/></a></li>
+    </ul> -->
+  </div>
+
+  <div id="post">
+
+  <div id="title">
       <h1>Enumerable#map</h1>
       <h3>I Could Use a Map</h3>
       <h4>February 4, 2015</h4>
   </div>
-  <div>
-    <p>
+     <p>
     What is "Enumerable" anyway?  Enumerable is a type of Ruby class that contains methods that sort, search, and traverse over each element of a collection of data in an array.  <a href="http://ruby-doc.org/core-2.2.0/Enumerable.html">The Enumerable Ruby Docs</a> lists all these handy methods for your viewing pleasure.  In this post I'll specificially expound upon the #map method and why you may want to use it in your code.
     </p>
     <p>
@@ -56,11 +73,23 @@ puts array.join(",")
 </pre>
 Overall we've learned that Enumerable methods are fantastic for condensing several lines of code into a beautiful solution and can be great for refactoring confusing or inelegant code.  Additionally I hope I've illuminated how #map works and why it's useful.  Again please consult <a href="http://ruby-doc.org/core-2.2.0/Enumerable.html">the Enumerable Ruby Docs</a> for more awesome methods.
       </p>
+      <div id="return"><a href="https://cjwilsonjr.github.io/blog/index.html">Return to Blog Index</a></div>
   </div>
-<p id="return"><a href="https://cjwilsonjr.github.io/blog/index.html">Return to Blog Index</a></p>
-<div id="footer">
-<footer><p>Thank you for visiting!
-      Dev Bootcamp 2015</p>
-    </footer></div>
-</main>
 
+</div>
+
+
+
+<!--   <footer>
+    <p>CJ Wilson 2015</p>
+    <ul id ="social">
+      <li><a href="mailto:christopher.wilson.jr@gmail.com"><img src="../45_free_icons/Without_Border/email.png" alt="Email"/></a></li>
+      <li><a href="https://www.twitter.com/heycjwilson"><img src="../45_free_icons/Without_Border/twitter.png" alt="Twitter"/></a></li>
+      <li><a href="https://www.linkedin.com/in/cjwilsonjr"><img src="../45_free_icons/Without_Border/linkedin.png " alt ="LinkedIn"/></a></li>
+      <li><a href="https://github.com/cjwilsonjr"><img src="../45_free_icons/Without_Border/github.png " alt="GitHub"/></a></li>
+    </ul>
+  </footer>
+ -->
+</body>
+
+</html>

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
   <title>My Blog</title>
   <meta charset="UTF-8">
@@ -6,27 +7,43 @@
   <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
 </head>
 
-<main>
-   <header>
-      <h1>CJ Wilson</h1>
-      <h4>From Zero to Zen: Software Development is Practice</h4>
-      <ul>
-        <li><a href="https://cjwilsonjr.github.io/index.html">Home</a></li>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="https://cjwilsonjr.github.io/blog/index.html">Blog</a></li>
-        <li><a href="https://www.twitter.com/heycjwilson">Twitter</a></li>
-        <li><a href="https://www.linkedin.com/in/cjwilsonjr/">LinkedIn</a></li>
-        <li><a href="https://github.com/cjwilsonjr">GitHub</a></li>
-      </ul>
-    </header>
-  <div id="header">
+<body>
+  <header>
+    <h1>CJ Wilson</h1>
+    <h4>From Zero to Zen: Software Development is Practice</h4>
+    <ul>
+      <li><a href="https://cjwilsonjr.github.io/index.html">Home</a></li>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="https://cjwilsonjr.github.io/blog/index.html">Blog</a></li>
+      <li><a href="https://www.twitter.com/heycjwilson">Twitter</a></li>
+      <li><a href="https://www.linkedin.com/in/cjwilsonjr/">LinkedIn</a></li>
+      <li><a href="https://github.com/cjwilsonjr">GitHub</a></li>
+    </ul>
+  </header>
+
+  <div id="intro">
+
+
+  <div id="sidebar">
+    <img src="siena.png" alt="Profile Picture">
+    <!-- <h3>Contact Me:</h3>
+    <ul id ="social">
+      <li><a href="mailto:christopher.wilson.jr@gmail.com"><img src="../45_free_icons/Without_Border/email.png" alt="Email"/></a></li>
+      <li><a href="https://www.twitter.com/heycjwilson"><img src="../45_free_icons/Without_Border/twitter.png" alt="Twitter"/></a></li>
+      <li><a href="https://www.linkedin.com/in/cjwilsonjr"><img src="../45_free_icons/Without_Border/linkedin.png " alt ="LinkedIn"/></a></li>
+      <li><a href="https://github.com/cjwilsonjr"><img src="../45_free_icons/Without_Border/github.png " alt="GitHub"/></a></li>
+    </ul> -->
+  </div>
+
+  <div id="post">
+
+  <div id="title">
       <h1>Ruby Variable Scope</h1>
       <h3>Global, Local, Instance, Class, and Constant</h3>
       <h4>February 19, 2015</h4>
   </div>
-  <div>
-    <p>
+      <p>
     Scope refers to how accessible variables and constants are within a program.  Ruby has four variable scope options <b>(global, local, instance, and class)</b> and a constant variable choice<b>(constant)</b>.  Each starts with a specific character to help visually identify the type.  Scope is a necessary concept that helps code interpret the priorities and importance of the code.  This is a foundational concept of object-oriented programming.  In this post I will refer to a class Circle that will allow us to calculate the circumference and area of a given circle.  I hope that this example will help outline the basics of variable scope.  Here we go!
       <pre>
         <code>
@@ -87,14 +104,23 @@ As a rudimentary example, @@math will equal 2 throughout every instance of the C
     <p>
       <b>Constants</b> are defined with a specific value and shouldn't be changed once the (Ruby will actually allow you to change a constant, but it is ill-advised).  <b>A constant conventionally is typed in all capital letters.</b>  The constant has a global scope when defined outside of a class but is accessible within any instance of a class when defined inside a class.  In the Circle class PI is actually an example of a constant variable of the Math module.  PI always contains the float equivalent of 3.141592... .  I want to reiterate that constant values are accessible within the class or module it was created.  If you are outside of the class or module, you use the :: operator to access the value like we did with Math::PI.  Because we know the path, we can access the constant.
     </p>
+      <div id="return"><a href="https://cjwilsonjr.github.io/blog/index.html">Return to Blog Index</a></div>
   </div>
-<p id="return"><a href="https://cjwilsonjr.github.io/blog/index.html">Return to Blog Index</a></p>
-<div id="footer">
-<footer>
-  <p>
-    Thank you for visiting!
-      Dev Bootcamp 2015
-    </p>
-    </footer></div>
-</main>
 
+</div>
+
+
+
+<!--   <footer>
+    <p>CJ Wilson 2015</p>
+    <ul id ="social">
+      <li><a href="mailto:christopher.wilson.jr@gmail.com"><img src="../45_free_icons/Without_Border/email.png" alt="Email"/></a></li>
+      <li><a href="https://www.twitter.com/heycjwilson"><img src="../45_free_icons/Without_Border/twitter.png" alt="Twitter"/></a></li>
+      <li><a href="https://www.linkedin.com/in/cjwilsonjr"><img src="../45_free_icons/Without_Border/linkedin.png " alt ="LinkedIn"/></a></li>
+      <li><a href="https://github.com/cjwilsonjr"><img src="../45_free_icons/Without_Border/github.png " alt="GitHub"/></a></li>
+    </ul>
+  </footer>
+ -->
+</body>
+
+</html>

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
   <title>My Blog</title>
   <meta charset="UTF-8">
@@ -6,26 +7,42 @@
   <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
 </head>
 
-<main>
-   <header>
-      <h1>CJ Wilson</h1>
-      <h4>From Zero to Zen: Software Development is Practice</h4>
-      <ul>
-        <li><a href="https://cjwilsonjr.github.io/index.html">Home</a></li>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="https://cjwilsonjr.github.io/blog/index.html">Blog</a></li>
-        <li><a href="https://www.twitter.com/heycjwilson">Twitter</a></li>
-        <li><a href="https://www.linkedin.com/in/cjwilsonjr/">LinkedIn</a></li>
-        <li><a href="https://github.com/cjwilsonjr">GitHub</a></li>
-      </ul>
-    </header>
-  <div id="header">
+<body>
+  <header>
+    <h1>CJ Wilson</h1>
+    <h4>From Zero to Zen: Software Development is Practice</h4>
+    <ul>
+      <li><a href="https://cjwilsonjr.github.io/index.html">Home</a></li>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="https://cjwilsonjr.github.io/blog/index.html">Blog</a></li>
+      <li><a href="https://www.twitter.com/heycjwilson">Twitter</a></li>
+      <li><a href="https://www.linkedin.com/in/cjwilsonjr/">LinkedIn</a></li>
+      <li><a href="https://github.com/cjwilsonjr">GitHub</a></li>
+    </ul>
+  </header>
+
+  <div id="intro">
+
+
+  <div id="sidebar">
+    <img src="siena.png" alt="Profile Picture">
+    <!-- <h3>Contact Me:</h3>
+    <ul id ="social">
+      <li><a href="mailto:christopher.wilson.jr@gmail.com"><img src="../45_free_icons/Without_Border/email.png" alt="Email"/></a></li>
+      <li><a href="https://www.twitter.com/heycjwilson"><img src="../45_free_icons/Without_Border/twitter.png" alt="Twitter"/></a></li>
+      <li><a href="https://www.linkedin.com/in/cjwilsonjr"><img src="../45_free_icons/Without_Border/linkedin.png " alt ="LinkedIn"/></a></li>
+      <li><a href="https://github.com/cjwilsonjr"><img src="../45_free_icons/Without_Border/github.png " alt="GitHub"/></a></li>
+    </ul> -->
+  </div>
+
+  <div id="post">
+
+  <div id="title">
       <h1>Ruby Classes</h1>
       <h3>Meet My Musicians</h3>
       <h4>February 12, 2015</h4>
   </div>
-  <div>
     <p>
       Welcome to my introduction of Ruby classes.  We know that Ruby is an object-oriented programming language, but beginners may struggle to understand what that signifies.  Object-oriented languages are made up of classes and objects.  A class creates the basic layout of an object in Ruby.  Objects receive information and perform tasks based on that information you give.  In Ruby an object is an instance of a class.  Today I've created a Ruby class called Musicians.  These musicians are all similar--they have the same set of skills and know the same things about themselves, but each musician is a little different.  For example my musicians know that they can have a name, an instrument, and a song to play.  Each different musician is an instance of the class Musicians. Whenever I want my class object to take parameters, I define an initialize method that runs at the beginning of each new object creation.  This allows each new object to have the same parameters, but the value of those parameters could change based on what values you assign.  In the code below, I have defined my <code>class Musician</code> and defined my initialize method with parameters of name, instrument, and song.  Hold on a second... what are those weird @ symbols in front of the variable names?  Ruby classes have four different variable types(local, instance, class, and global), and this specific one is called an instance variable.  By assigning @name to the variable name, I'm telling my code to allow other methods within this object to use these values.  The instance variables' values will change based on the parameters entered for a new object.  Lastly outside of the class definition, I create three new musicians, each with their own specific parameter values.
     <pre>
@@ -112,11 +129,23 @@ jimi.backhanded_compliment
 </pre>
     Thank you for coming to the show!
       </p>
+      <div id="return"><a href="https://cjwilsonjr.github.io/blog/index.html">Return to Blog Index</a></div>
   </div>
-<p id="return"><a href="https://cjwilsonjr.github.io/blog/index.html">Return to Blog Index</a></p>
-<div id="footer">
-<footer><p>Thank you for visiting!
-      Dev Bootcamp 2015</p>
-    </footer></div>
-</main>
 
+</div>
+
+
+
+<!--   <footer>
+    <p>CJ Wilson 2015</p>
+    <ul id ="social">
+      <li><a href="mailto:christopher.wilson.jr@gmail.com"><img src="../45_free_icons/Without_Border/email.png" alt="Email"/></a></li>
+      <li><a href="https://www.twitter.com/heycjwilson"><img src="../45_free_icons/Without_Border/twitter.png" alt="Twitter"/></a></li>
+      <li><a href="https://www.linkedin.com/in/cjwilsonjr"><img src="../45_free_icons/Without_Border/linkedin.png " alt ="LinkedIn"/></a></li>
+      <li><a href="https://github.com/cjwilsonjr"><img src="../45_free_icons/Without_Border/github.png " alt="GitHub"/></a></li>
+    </ul>
+  </footer>
+ -->
+</body>
+
+</html>
