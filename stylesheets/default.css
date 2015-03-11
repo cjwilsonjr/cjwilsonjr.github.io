@@ -97,10 +97,14 @@ footer p {
   float:left;
   /*display: inline-block;*/
   right:0;
-  width: auto;
+  width: 65%;
   margin-left: 3%;
   margin-right: auto;
   overflow: hidden;
+}
+
+#indexlink a{
+  font-weight: bolder;
 }
 
 #sidebar {
@@ -128,16 +132,20 @@ border:none;
   list-style-type: none;
 }
 
-#sidebar h3 {text-align: center;}
+#sidebar h3 {
+margin: 5%;
+  text-align: center;
+}
 
 #social {
   list-style-type: none;
+  /*text-align: center;*/
 }
 
 #social li {
+  display: inline;
   text-align: center;
-    margin-top: 10px;
-  margin-bottom: 10px;
+margin-right: 10px;
 }
 
 #intro ul li a {
