@@ -6,9 +6,9 @@
 
 #post {
   min-width: 100px;
-  float: left;
+  /*float: left;*/
   overflow: hidden;
-  width: 65%;
+  width: auto;
   margin:2%;
   padding:2%;
   background-color: #b5caca;
