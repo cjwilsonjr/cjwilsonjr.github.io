@@ -58,6 +58,7 @@ pre {
   color: blue;
   margin-left: 10px;
   margin-right: 10px;
+  overflow: auto;
 }
 
 #post p {
