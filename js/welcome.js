@@ -13,16 +13,18 @@
 
 // });
 $(document).ready(function(){
-  $("a[href^='#']").on("click", function(event) {
-      event.preventDefault();
 
-      var target = this.hash;
-      var $target = $(target);
+  var anchor = "a[href^='#']";
+  $(document).on("click", anchor, function(event){
+    event.preventDefault();
 
-      $('html, body').stop().animate({
-          'scrollTop': $target.offset().top
-      }, 900, 'swing', function () {
-          window.location.hash = target;
-      });
+    var target = this.hash;
+    var $target = $(target);
+
+    $('html, body').stop().animate({
+      'scrollTop': $target.offset().top
+    }, 900, 'swing');//, function(){
+      // window.location.hash = target;
+    // });
   });
 });
