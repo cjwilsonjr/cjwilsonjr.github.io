@@ -23,8 +23,21 @@ $(document).ready(function(){
 
     $('html, body').stop().animate({
       'scrollTop': $target.offset().top
-    }, 900, 'swing');//, function(){
-      // window.location.hash = target;
-    // });
+      }, 900, 'swing'); //, function(){
+       //window.location.hash = target;
+     //});
+  });
+
+  var topButton = $(".return-top");
+
+
+  $(document).on("scroll", function(event){
+    event.preventDefault();
+
+    if ($(window).scrollTop() === 0) {
+      topButton.fadeOut("fast"); //.css("display", "none");
+    } else {
+    topButton.fadeIn("fast");
+    }
   });
 });
