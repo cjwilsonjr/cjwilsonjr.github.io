@@ -1,20 +1,7 @@
-// $(document).ready(function(){
-//   // var about = $("a[href$='#about']");
-//   var about = $('a[href="' + document.location.hash + '"]')
-//   $(document).on("click", $('a[href="' + document.location.hash + '"]'), function(event){
-//   // // event.preventDefault();
-//   // // console.log($("a[href$='#about']"));
-//   // // var about = $("a[href$='#about']");
-//   // console.log(event.target);
-//   // console.log($("a[href='" + document.location.hash + "]'"));
-//   about.parent().addClass("active");
-//   });
-// // $('ul.nav > li > a[href="' + document.location.hash + '"]').click(function(){  $('ul.nav > li').removeClass('active'); $(this).parent().addClass('active'); });
-
-// });
 $(document).ready(function(){
 
   var anchor = "a[href^='#']";
+
   $(document).on("click", anchor, function(event){
     event.preventDefault();
 
@@ -23,21 +10,18 @@ $(document).ready(function(){
 
     $('html, body').stop().animate({
       'scrollTop': $target.offset().top
-      }, 900, 'swing'); //, function(){
-       //window.location.hash = target;
-     //});
-  });
+      }, 900, 'swing');
+    });
 
   var topButton = $(".return-top");
-
 
   $(document).on("scroll", function(event){
     event.preventDefault();
 
-    if ($(window).scrollTop() === 0) {
-      topButton.fadeOut("fast"); //.css("display", "none");
+    if ($(window).scrollTop() === 0){
+      topButton.fadeOut("fast");
     } else {
-    topButton.fadeIn("fast");
+      topButton.fadeIn("fast");
     }
   });
 });
