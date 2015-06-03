@@ -141,5 +141,6 @@ body {
   top: 75%;
 }
 
-.project-modal {
+h2, h3 {
+  padding: 1%;
 }
