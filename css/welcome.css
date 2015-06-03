@@ -90,6 +90,7 @@ body {
 */
 #projects {
   padding-top: 50px;
+  padding-bottom: 50px;
   /*padding: 40px 15px;*/
   text-align: center;
   width: 100%;
@@ -97,11 +98,11 @@ body {
   /*height: 100vh;*/
 }
 
-.marketing {
+/*.marketing {
   width: 100%;
   padding: 0;
   margin: 0;
-}
+}*/
 
 #contact {
   padding-top: 50px;
