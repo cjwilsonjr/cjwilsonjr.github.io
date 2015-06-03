@@ -24,4 +24,16 @@ $(document).ready(function(){
       topButton.fadeIn("fast");
     }
   });
+
+  $(document).on("click", ".modal-image", function(event){
+    event.preventDefault();
+
+    var id = $(this).attr("id");
+    var targetModal = $("#" + id + "-modal");
+    targetModal.modal("toggle");
+      // $('.project-modal').on("shown.bs.modal", function(event){
+      //   // var link = $(event.relatedTarget);
+      //   $('.project-modal').modal("hide");
+      // });
+  });
 });

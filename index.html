@@ -73,24 +73,95 @@
           <a class="btn btn-default" href="images/CHRISTOPHERWILSONRESUME.pdf">Download Resume <i class="fa fa-book"></i></a>
       </div>
 
-      <div id="projects" class="container-fluid marketing">
+      <div id="projects" class="container marketing">
         <h1>Projects</h1>
+
           <div class="col-lg-4">
-            <img class="img-circle" src="images/burano.jpg" width="140" height="140">
+            <!-- <button class="btn project-modal" data-toggle="modal" data-target="project-modal" data-keyboard="true" data-backdrop="true"> -->
+            <img class="img-circle modal-image" id="timetris"  src="images/timetris-trans.png" width="200" height="200"></button>
             <h2>Timetris</h2>
-            <p>Hello</p>
-            <p><a class="btn btn-default" href="https://timetris.herokuapp.com/" role="button">View details &raquo;</a></p>
+            <p>Timetris connects with your Google Calendar to fill gaps in your daily schedule.  It was developed in 7 days as a final project during Dev Bootcamp.  Timetris was built primarily with Rails and Javascript using technologies such as Omniauth and the Google Calendar API.</p>
+            <!-- <p><a class="btn btn-default" data-toggle="modal" data-target="#timetris-modal">View details &raquo;</a></p> -->
+            <!-- <a class="btn btn-lg btn-success" data-toggle="modal" data-target="#timetris-modal">Show modal!</a> -->
+
+            <div class="modal fade" id="timetris-modal" tabindex="-1" data-overlay="true" data-keyboard="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title" id="myModalLabel">Timetris</h2>
+                  </div>
+                  <div class="modal-body">
+                    <p class="lead">
+                      Timetris connects with your Google Calendar to fill gaps in your daily schedule.  It was developed in 7 days as a final project during Dev Bootcamp.  Timetris was built primarily with Rails and Javascript using technologies such as Omniauth and the Google Calendar API.
+                    </p>
+                    <p>Technologies: Ruby, Rails, Postgresql, Bootstrap, JavaScript, AJAX, Omniauth, Google Calendar API</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a class="btn btn-default" href="https://timetris.herokuapp.com/">Visit Timetris</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
           </div>
+
+
+
           <div class="col-lg-4">
-            <img class="img-circle" src="images/burano.jpg" width="140" height="140">
+            <img class="img-circle modal-image" id="musikit" src="images/burano.jpg" width="200" height="200">
             <h2>Musikit</h2>
-            <p>Hello</p>
-            <p><a class="btn btn-default" href="https://musikit.herokuapp.com/" role="button">View details &raquo;</a></p>
+            <p>Musikit is a simple Django app written in Python that utilizes the library Pafy to retrieve metadata from Youtube.  Musikit was developed in a day as a weekend deep-dive into Python and Django.</p>
+
+            <div class="modal fade" id="musikit-modal" tabindex="-1" data-overlay="true" data-keyboard="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title" id="myModalLabel">Musikit</h2>
+                  </div>
+                  <div class="modal-body">
+                    <p class="lead">
+                      Musikit is a simple Django app written in Python that utilizes the library Pafy to retrieve metadata from Youtube.  Musikit was developed in a day as a weekend deep-dive into Python and Django.
+                    </p>
+                    <p>Technologies: Python, Django, Postgresql, Pafy</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a class="btn btn-default" href="https://timetris.herokuapp.com/">Visit Musikit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <p><a class="btn btn-default" href="https://musikit.herokuapp.com/" role="button">View details &raquo;</a></p> -->
           </div>
           <div class="col-lg-4">
-            <img class="img-circle" src="images/seville.jpg" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Hello</p>
+            <img class="img-circle modal-image" id="samuelstennisport" src="images/seville.jpg" width="200" height="200">
+            <h2>Samuels Tennisport</h2>
+            <p>This app is designed to manage customers and track their rackets.  Customers are alerted whenever a registered racket is due for a string change.</p>
+
+            <div class="modal fade" id="samuelstennisport-modal" tabindex="-1" data-overlay="true" data-keyboard="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title" id="myModalLabel">Samuels Tennisport</h2>
+                  </div>
+                  <div class="modal-body">
+                    <p class="lead">
+                      This app is designed to manage customers and track their rackets.  Customers are alerted whenever a registered racket is due for a string change.
+                    </p>
+                    <p>Technologies: Ruby, Rails, Postgresql, Bootstrap, JavaScript, AJAX</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a class="btn btn-default" href="https://timetris.herokuapp.com/">Visit Samuels Tennisport</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
           </div>
       </div>

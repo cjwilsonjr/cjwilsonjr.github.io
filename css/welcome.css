@@ -93,7 +93,7 @@ body {
   /*padding: 40px 15px;*/
   text-align: center;
   width: 100%;
-  /*height: 100%;*/
+  height: 100%;
   /*height: 100vh;*/
 }
 
@@ -138,4 +138,7 @@ body {
 #copyright {
   position: relative;
   top: 75%;
+}
+
+.project-modal {
 }
