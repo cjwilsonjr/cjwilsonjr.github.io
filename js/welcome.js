@@ -31,9 +31,16 @@ $(document).ready(function(){
     var id = $(this).attr("id");
     var targetModal = $("#" + id + "-modal");
     targetModal.modal("toggle");
-      // $('.project-modal').on("shown.bs.modal", function(event){
-      //   // var link = $(event.relatedTarget);
-      //   $('.project-modal').modal("hide");
-      // });
+  });
+
+  $(".modal-image").hover(function(event){
+    event.preventDefault();
+
+    $(this).css("opacity", ".5");
+
+  }, function(event){
+    event.preventDefault();
+
+    $(this).css("opacity", "1");
   });
 });
