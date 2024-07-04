@@ -1,6 +1,311 @@
----
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-layout: home
----
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="images/favicon.png" />
+
+    <title>CJ Wilson</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/welcome.css" rel="stylesheet" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/welcome.js"></script>
+  </head>
+
+  <body data-spy="scroll" data-target="#scrollspy">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container" id="scrollspy">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-expanded="false"
+            aria-controls="navbar"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#about">CJ Wilson</a>
+        </div>
+
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav nav-links nav-pills" role="navigation">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="return-top">
+        <a href="#about"
+          ><span class="glyphicon glyphicon-circle-arrow-up"></span
+        ></a>
+      </div>
+
+      <div id="about">
+        <a href="https://dailyfoc.us/">
+          <img
+            class="img-responsive img-circle center-block"
+            src="images/cj_square.png"
+          />
+        </a>
+        <h2>Hey, I'm CJ.</h2>
+        <p class="lead">
+          I'm a senior software engineer with a knack for breaking down code and
+          building up teammates.<br />I specialize in building web apps with
+          Ruby on Rails and Angular.
+        </p>
+        <p>
+          Click my face to see what I'm currently building.<br />
+          I'm also a writer, investor, and amateur bedroom musician.
+          <a href="mailto:christopher.wilson.jr@gmail.com"
+            >I'd love to hear from you.</a
+          >
+        </p>
+        <a class="btn btn-default" href="images/CJ Wilson Resume.pdf"
+          >Download Resume <i class="fa fa-book"></i
+        ></a>
+      </div>
+
+      <div id="projects" class="projects container marketing">
+        <div>
+          <h2>Active Projects</h2>
+          <div class="col-lg-4">
+            <a href=""
+              ><img
+                class="img-circle modal-image"
+                id="daily-focus"
+                src="images/favicon.png"
+                width="200"
+                height="200"
+            /></a>
+            <h3>Daily Focus (Alpha)</h3>
+            <div
+              class="modal fade"
+              id="daily-focus-modal"
+              tabindex="-1"
+              data-overlay="true"
+              data-keyboard="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                    <h3 class="modal-title" id="myModalLabel">
+                      Daily Focus (Alpha)
+                    </h3>
+                  </div>
+                  <div class="modal-body">
+                    <p class="lead">
+                      Daily Focus is a time block daily planner app. Time
+                      blocking is the concept of planning out your day by giving
+                      every minute of your time a specific job. This helps me
+                      make a realistic, effective schedule. The concept is based
+                      off of Cal Newport's Daily Time Block Planner, and it's an
+                      essential part of my focused work routine. Unlike a
+                      traditional daily planner, this app encourages revision
+                      when plans change. If your schedule changes, copy a time
+                      block to a new column and re-plan your day from there.
+                      Review what you planned versus what really happened at the
+                      end of your day. Use that knowledge to make a better plan
+                      the next day. Avoid overwhelm and burnout with time
+                      blocking. This app is a work in progress.
+                    </p>
+                    <p>Technologies: Ruby on Rails, SQLite, Hotwire</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a class="btn btn-default" href="https://dailyfoc.us/"
+                      >Visit Daily Focus</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects container marketing">
+        <div>
+          <h2>Dev Bootcamp Projects</h2>
+          <div class="col-lg-4">
+            <a href=""
+              ><img
+                class="img-circle modal-image"
+                id="timetris"
+                src="images/timetris-trans.png"
+                width="200"
+                height="200"
+            /></a>
+            <h3>Timetris</h3>
+            <div
+              class="modal fade"
+              id="timetris-modal"
+              tabindex="-1"
+              data-overlay="true"
+              data-keyboard="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                    <h3 class="modal-title" id="myModalLabel">Timetris</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p class="lead">
+                      Timetris connects with your Google Calendar to fill gaps
+                      in your daily schedule. It was developed in 7 days as a
+                      final project during Dev Bootcamp. Timetris was built
+                      primarily with Rails and Javascript using technologies
+                      such as Omniauth and the Google Calendar API.
+                    </p>
+                    <p>
+                      Technologies: Ruby, Rails, Postgresql, Bootstrap,
+                      JavaScript, AJAX, Omniauth, Google Calendar API
+                    </p>
+                  </div>
+                  <div class="modal-footer"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <a href=""
+            ><img
+              class="img-circle modal-image"
+              id="musikit"
+              src="images/guitar.png"
+              width="200"
+              height="200"
+          /></a>
+          <h3>Musikit</h3>
+          <div
+            class="modal fade"
+            id="musikit-modal"
+            tabindex="-1"
+            data-overlay="true"
+            data-keyboard="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                  </button>
+                  <h3 class="modal-title" id="myModalLabel">Musikit</h3>
+                </div>
+                <div class="modal-body">
+                  <p class="lead">
+                    Musikit is a simple Django app written in Python that
+                    utilizes the library Pafy to retrieve metadata from Youtube.
+                    Musikit was developed in a day as a weekend deep-dive into
+                    Python and Django.
+                  </p>
+                  <p>Technologies: Python, Django, Postgresql, Pafy</p>
+                </div>
+                <div class="modal-footer"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <a href=""
+            ><img
+              class="img-circle modal-image"
+              id="samuelstennisport"
+              src="images/samuels_tennisport.png"
+              width="200"
+              height="200"
+          /></a>
+          <h3>Samuels Tennisport</h3>
+          <div
+            class="modal fade"
+            id="samuelstennisport-modal"
+            tabindex="-1"
+            data-overlay="true"
+            data-keyboard="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                  </button>
+                  <h3 class="modal-title" id="myModalLabel">
+                    Samuels Tennisport
+                  </h3>
+                </div>
+                <div class="modal-body">
+                  <p class="lead">
+                    This app is designed to manage customers and track their
+                    rackets. Customers are alerted whenever a registered racket
+                    is due for a string change.
+                  </p>
+                  <p>
+                    Technologies: Ruby, Rails, Postgresql, Bootstrap,
+                    JavaScript, AJAX
+                  </p>
+                </div>
+                <div class="modal-footer"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer id="contact">
+        <h2>Contact</h2>
+        <div id="social-icons">
+          <a href="mailto:christopher.wilson.jr@gmail.com"
+            ><i class="fa fa-envelope fa-3x"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/cjwilsonjr"
+            ><i class="fa fa-linkedin fa-3x"></i
+          ></a>
+          <a href="https://github.com/cjwilsonjr"
+            ><i class="fa fa-github-alt fa-3x"></i
+          ></a>
+          <a href="https://twitter.com/heycjwilson"
+            ><i class="fa fa-twitter fa-3x"></i
+          ></a>
+        </div>
+        <p id="copyright">
+          COPYRIGHT ©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          CJ Wilson
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
