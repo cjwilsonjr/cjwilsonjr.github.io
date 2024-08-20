@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <meta name="description" content="" />
@@ -11,7 +10,9 @@
 
     <title>CJ Wilson</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Add Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link href="css/welcome.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,345 +24,447 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/welcome.js"></script>
   </head>
 
-  <body data-spy="scroll" data-target="#scrollspy">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container" id="scrollspy">
-        <div class="navbar-header">
-          <button
-            type="button"
-            class="navbar-toggle collapsed"
-            data-toggle="collapse"
-            data-target="#navbar"
-            aria-expanded="false"
-            aria-controls="navbar"
-          >
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+  <body class="bg-[#ececec] font-sans relative">
+    <nav
+      id="navbar"
+      class="bg-gray-800 text-white fixed w-full top-0 z-10 shadow-md"
+    >
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <a href="#about" class="text-xl font-bold">CJ Wilson</a>
+          <div class="hidden md:flex space-x-4">
+            <a href="#projects" class="hover:text-gray-300">Projects</a>
+            <a href="#contact" class="hover:text-gray-300">Contact</a>
+          </div>
+          <button class="md:hidden">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
           </button>
-          <a class="navbar-brand" href="#about">CJ Wilson</a>
-        </div>
-
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav nav-links nav-pills" role="navigation">
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
         </div>
       </div>
     </nav>
 
-    <div class="container">
-      <div class="return-top">
-        <a href="#about"
-          ><span class="glyphicon glyphicon-circle-arrow-up"></span
-        ></a>
-      </div>
-
-      <div id="about">
+    <div class="container mx-auto px-4 mt-16">
+      <div id="about" class="text-center py-12 h-screen">
         <a href="https://dailyfoc.us/">
           <img
-            class="img-responsive img-circle center-block"
+            class="rounded-full mx-auto w-48 h-48 object-cover shadow-lg"
             src="images/cj_square.png"
+            alt="CJ Wilson"
           />
         </a>
-        <h2>Hey, I'm CJ.</h2>
-        <p class="lead">
+        <h2 class="text-3xl font-bold mt-4">Hey, I'm CJ.</h2>
+        <p class="text-xl mt-2">
           I'm a senior software engineer with a knack for breaking down code and
           building up teammates.<br />I specialize in building web apps with
           Ruby on Rails and Angular.
         </p>
-        <p>
+        <p class="mt-4">
           Click my face to see what I'm currently building.<br />
           I'm also a writer, investor, and amateur bedroom musician.
-          <a href="mailto:christopher.wilson.jr@gmail.com"
+          <a
+            href="mailto:christopher.wilson.jr@gmail.com"
+            class="text-blue-600 hover:underline"
             >I'd love to hear from you.</a
           >
         </p>
         <a
-          class="btn btn-default"
+          class="inline-block bg-blue-500 text-white px-4 py-2 rounded mt-4 hover:bg-blue-600 transition duration-300"
           href="images/CJ Wilson Resume.pdf"
           target="_blank"
-          >Download Resume <i class="fa fa-book"></i
+          >Download Resume <i class="fa fa-book ml-2"></i
         ></a>
+
+        <!-- Contact information -->
+        <div class="mt-8" id="contact">
+          <h3 class="text-xl font-bold mb-4">Contact</h3>
+          <div class="flex justify-center space-x-6 mb-4">
+            <a
+              href="mailto:christopher.wilson.jr@gmail.com"
+              class="text-gray-600 hover:text-gray-800 transition-colors duration-300"
+            >
+              <i class="fa fa-envelope fa-2x"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/cjwilsonjr"
+              class="text-gray-600 hover:text-gray-800 transition-colors duration-300"
+            >
+              <i class="fa-brands fa-linkedin fa-2x"></i>
+            </a>
+            <a
+              href="https://github.com/cjwilsonjr"
+              class="text-gray-600 hover:text-gray-800 transition-colors duration-300"
+            >
+              <i class="fa-brands fa-github-alt fa-2x"></i>
+            </a>
+            <a
+              href="https://twitter.com/heycjwilson"
+              class="text-gray-600 hover:text-gray-800 transition-colors duration-300"
+            >
+              <i class="fa-brands fa-twitter fa-2x"></i>
+            </a>
+          </div>
+          <p class="text-gray-600">
+            <a
+              href="mailto:christopher.wilson.jr@gmail.com"
+              class="hover:underline"
+              >christopher.wilson.jr@gmail.com</a
+            >
+          </p>
+        </div>
       </div>
 
-      <div id="projects" class="projects container marketing">
-        <div>
-          <h2>Active Projects</h2>
-          <div class="col-lg-4">
-            <a href=""
-              ><img
-                class="img-circle modal-image"
-                id="daily-focus"
-                src="images/favicon.png"
-                width="200"
-                height="200"
-            /></a>
-            <h3>Daily Focus (Alpha)</h3>
-            <div
-              class="modal fade"
-              id="daily-focus-modal"
-              tabindex="-1"
-              data-overlay="true"
-              data-keyboard="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">
-                      &times;
-                    </button>
-                    <h3 class="modal-title" id="myModalLabel">
-                      Daily Focus (Alpha)
-                    </h3>
-                  </div>
-                  <div class="modal-body">
-                    <p class="lead">
-                      Daily Focus is a time block daily planner app. Time
-                      blocking is the concept of planning out your day by giving
-                      every minute of your time a specific job. This helps me
-                      make a realistic, effective schedule. The concept is based
-                      off of Cal Newport's Daily Time Block Planner, and it's an
-                      essential part of my focused work routine. Unlike a
-                      traditional daily planner, this app encourages revision
-                      when plans change. If your schedule changes, copy a time
-                      block to a new column and re-plan your day from there.
-                      Review what you planned versus what really happened at the
-                      end of your day. Use that knowledge to make a better plan
-                      the next day. Avoid overwhelm and burnout with time
-                      blocking. This app is a work in progress.
-                    </p>
-                    <p>Technologies: Ruby on Rails, SQLite, Hotwire</p>
-                  </div>
-                  <div class="modal-footer">
-                    <a
-                      class="btn btn-default"
-                      href="https://dailyfoc.us/"
-                      target="_blank"
-                      >Visit Daily Focus</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div id="projects" class="py-12">
+        <h2 class="text-2xl font-bold mb-8">Active Projects</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Daily Focus Project -->
+          <div
+            class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
+          >
+            <img
+              class="rounded-full mx-auto w-48 h-48 object-cover cursor-pointer shadow-md hover:shadow-lg transition-shadow duration-300"
+              id="daily-focus"
+              src="images/favicon.png"
+              alt="Daily Focus"
+              onclick="openModal('daily-focus-modal')"
+            />
+            <h3 class="text-xl font-bold mt-4 text-center">
+              Daily Focus (Alpha)
+            </h3>
           </div>
-          <div class="col-lg-4">
-            <a href=""
-              ><img
-                class="img-circle modal-image"
-                id="value-tools"
-                src="images/value_tools.jpeg"
-                width="200"
-                height="200"
-            /></a>
-            <h3>Value Tools (Alpha)</h3>
-            <div
-              class="modal fade"
-              id="value-tools-modal"
-              tabindex="-1"
-              data-overlay="true"
-              data-keyboard="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">
-                      &times;
-                    </button>
-                    <h3 class="modal-title" id="myModalLabel">
-                      Value Tools (Alpha)
-                    </h3>
-                  </div>
-                  <div class="modal-body">
-                    <p class="lead">
-                      Value Tools is a suite of value investing tools to help
-                      make better investment decisions. Currently the app
-                      includes a discounted cash flow calculator that helps
-                      investors arrive at a rough estimate of intrinsic value
-                      based on earnings or cash flow. This app is a work in
-                      progress.
-                    </p>
-                    <p>Technologies: React</p>
-                  </div>
-                  <div class="modal-footer">
-                    <a
-                      class="btn btn-default"
-                      href="https://value-tools.netlify.app/"
-                      target="_blank"
-                      >Visit Value Tools</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
+
+          <!-- Value Tools Project -->
+          <div
+            class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
+          >
+            <img
+              class="rounded-full mx-auto w-48 h-48 object-cover cursor-pointer shadow-md hover:shadow-lg transition-shadow duration-300"
+              id="value-tools"
+              src="images/value_tools.jpeg"
+              alt="Value Tools"
+              onclick="openModal('value-tools-modal')"
+            />
+            <h3 class="text-xl font-bold mt-4 text-center">
+              Value Tools (Alpha)
+            </h3>
           </div>
         </div>
       </div>
-      <div class="projects container marketing">
-        <div>
-          <h2>Dev Bootcamp Projects</h2>
-          <div class="col-lg-4">
-            <a href=""
-              ><img
-                class="img-circle modal-image"
-                id="timetris"
-                src="images/timetris-trans.png"
-                width="200"
-                height="200"
-            /></a>
-            <h3>Timetris</h3>
-            <div
-              class="modal fade"
-              id="timetris-modal"
-              tabindex="-1"
-              data-overlay="true"
-              data-keyboard="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">
-                      &times;
-                    </button>
-                    <h3 class="modal-title" id="myModalLabel">Timetris</h3>
-                  </div>
-                  <div class="modal-body">
-                    <p class="lead">
-                      Timetris connects with your Google Calendar to fill gaps
-                      in your daily schedule. It was developed in 7 days as a
-                      final project during Dev Bootcamp. Timetris was built
-                      primarily with Rails and Javascript using technologies
-                      such as Omniauth and the Google Calendar API.
-                    </p>
-                    <p>
-                      Technologies: Ruby, Rails, Postgresql, Bootstrap,
-                      JavaScript, AJAX, Omniauth, Google Calendar API
-                    </p>
-                  </div>
-                  <div class="modal-footer"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="col-lg-4">
-          <a href=""
-            ><img
-              class="img-circle modal-image"
+      <div class="py-12">
+        <h2 class="text-2xl font-bold mb-8">Dev Bootcamp Projects</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Timetris Project -->
+          <div
+            class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
+          >
+            <img
+              class="rounded-full mx-auto w-48 h-48 object-cover cursor-pointer shadow-md hover:shadow-lg transition-shadow duration-300"
+              id="timetris"
+              src="images/timetris-trans.png"
+              alt="Timetris"
+              onclick="openModal('timetris-modal')"
+            />
+            <h3 class="text-xl font-bold mt-4 text-center">Timetris</h3>
+          </div>
+
+          <!-- Musikit Project -->
+          <div
+            class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
+          >
+            <img
+              class="rounded-full mx-auto w-48 h-48 object-cover cursor-pointer shadow-md hover:shadow-lg transition-shadow duration-300"
               id="musikit"
               src="images/guitar.png"
-              width="200"
-              height="200"
-          /></a>
-          <h3>Musikit</h3>
-          <div
-            class="modal fade"
-            id="musikit-modal"
-            tabindex="-1"
-            data-overlay="true"
-            data-keyboard="true"
-          >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">
-                    &times;
-                  </button>
-                  <h3 class="modal-title" id="myModalLabel">Musikit</h3>
-                </div>
-                <div class="modal-body">
-                  <p class="lead">
-                    Musikit is a simple Django app written in Python that
-                    utilizes the library Pafy to retrieve metadata from Youtube.
-                    Musikit was developed in a day as a weekend deep-dive into
-                    Python and Django.
-                  </p>
-                  <p>Technologies: Python, Django, Postgresql, Pafy</p>
-                </div>
-                <div class="modal-footer"></div>
-              </div>
-            </div>
+              alt="Musikit"
+              onclick="openModal('musikit-modal')"
+            />
+            <h3 class="text-xl font-bold mt-4 text-center">Musikit</h3>
           </div>
-        </div>
 
-        <div class="col-lg-4">
-          <a href=""
-            ><img
-              class="img-circle modal-image"
+          <!-- Samuels Tennisport Project -->
+          <div
+            class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
+          >
+            <img
+              class="rounded-full mx-auto w-48 h-48 object-cover cursor-pointer shadow-md hover:shadow-lg transition-shadow duration-300"
               id="samuelstennisport"
               src="images/samuels_tennisport.png"
-              width="200"
-              height="200"
-          /></a>
-          <h3>Samuels Tennisport</h3>
-          <div
-            class="modal fade"
-            id="samuelstennisport-modal"
-            tabindex="-1"
-            data-overlay="true"
-            data-keyboard="true"
-          >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">
-                    &times;
-                  </button>
-                  <h3 class="modal-title" id="myModalLabel">
-                    Samuels Tennisport
-                  </h3>
-                </div>
-                <div class="modal-body">
-                  <p class="lead">
-                    This app is designed to manage customers and track their
-                    rackets. Customers are alerted whenever a registered racket
-                    is due for a string change.
-                  </p>
-                  <p>
-                    Technologies: Ruby, Rails, Postgresql, Bootstrap,
-                    JavaScript, AJAX
-                  </p>
-                </div>
-                <div class="modal-footer"></div>
-              </div>
-            </div>
+              alt="Samuels Tennisport"
+              onclick="openModal('samuelstennisport-modal')"
+            />
+            <h3 class="text-xl font-bold mt-4 text-center">
+              Samuels Tennisport
+            </h3>
           </div>
         </div>
       </div>
 
-      <footer id="contact">
-        <h2>Contact</h2>
-        <div id="social-icons">
-          <a href="mailto:christopher.wilson.jr@gmail.com"
-            ><i class="fa fa-envelope fa-3x"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/cjwilsonjr"
-            ><i class="fa-brands fa-linkedin fa-3x"></i
-          ></a>
-          <a href="https://github.com/cjwilsonjr"
-            ><i class="fa-brands fa-github-alt fa-3x"></i
-          ></a>
-          <a href="https://twitter.com/heycjwilson"
-            ><i class="fa-brands fa-twitter fa-3x"></i
-          ></a>
+      <!-- Modals -->
+      <div
+        id="modal-overlay"
+        class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"
+      ></div>
+
+      <!-- Daily Focus Modal -->
+      <div
+        id="daily-focus-modal"
+        class="fixed inset-0 flex items-center justify-center hidden z-50"
+      >
+        <div class="bg-white rounded-lg p-8 max-w-2xl w-full">
+          <h3 class="text-2xl font-bold mb-4">Daily Focus (Alpha)</h3>
+          <p class="mb-4">
+            Daily Focus is a time block daily planner app. Time blocking is the
+            concept of planning out your day by giving every minute of your time
+            a specific job. This helps me make a realistic, effective schedule.
+            The concept is based off of Cal Newport's Daily Time Block Planner,
+            and it's an essential part of my focused work routine.
+          </p>
+          <p class="mb-4">Technologies: Ruby on Rails, SQLite, Hotwire</p>
+          <div class="flex justify-end">
+            <a
+              href="https://dailyfoc.us/"
+              target="_blank"
+              class="bg-blue-500 text-white px-4 py-2 rounded mr-2 hover:bg-blue-600"
+              >Visit Daily Focus</a
+            >
+            <button
+              onclick="closeModal('daily-focus-modal')"
+              class="bg-gray-300 px-4 py-2 rounded hover:bg-gray-400"
+            >
+              Close
+            </button>
+          </div>
         </div>
-        <p id="copyright">
-          COPYRIGHT ©
-          <script>
-            document.write(new Date().getFullYear());
-          </script>
-          CJ Wilson
-        </p>
-      </footer>
+      </div>
+
+      <!-- Value Tools Modal -->
+      <div
+        id="value-tools-modal"
+        class="fixed inset-0 flex items-center justify-center hidden z-50"
+      >
+        <div class="bg-white rounded-lg p-8 max-w-2xl w-full">
+          <h3 class="text-2xl font-bold mb-4">Value Tools (Alpha)</h3>
+          <p class="mb-4">
+            Value Tools is a suite of value investing tools to help make better
+            investment decisions. Currently the app includes a discounted cash
+            flow calculator that helps investors arrive at a rough estimate of
+            intrinsic value based on earnings or cash flow. This app is a work
+            in progress.
+          </p>
+          <p class="mb-4">Technologies: React</p>
+          <div class="flex justify-end">
+            <a
+              href="https://value-tools.netlify.app/"
+              target="_blank"
+              class="bg-blue-500 text-white px-4 py-2 rounded mr-2 hover:bg-blue-600"
+              >Visit Value Tools</a
+            >
+            <button
+              onclick="closeModal('value-tools-modal')"
+              class="bg-gray-300 px-4 py-2 rounded hover:bg-gray-400"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timetris Modal -->
+      <div
+        id="timetris-modal"
+        class="fixed inset-0 flex items-center justify-center hidden z-50"
+      >
+        <div class="bg-white rounded-lg p-8 max-w-2xl w-full">
+          <h3 class="text-2xl font-bold mb-4">Timetris</h3>
+          <p class="mb-4">
+            Timetris connects with your Google Calendar to fill gaps in your
+            daily schedule. It was developed in 7 days as a final project during
+            Dev Bootcamp. Timetris was built primarily with Rails and Javascript
+            using technologies such as Omniauth and the Google Calendar API.
+          </p>
+          <p class="mb-4">
+            Technologies: Ruby, Rails, Postgresql, Bootstrap, JavaScript, AJAX,
+            Omniauth, Google Calendar API
+          </p>
+          <div class="flex justify-end">
+            <button
+              onclick="closeModal('timetris-modal')"
+              class="bg-gray-300 px-4 py-2 rounded hover:bg-gray-400"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Musikit Modal -->
+      <div
+        id="musikit-modal"
+        class="fixed inset-0 flex items-center justify-center hidden z-50"
+      >
+        <div class="bg-white rounded-lg p-8 max-w-2xl w-full">
+          <h3 class="text-2xl font-bold mb-4">Musikit</h3>
+          <p class="mb-4">
+            Musikit is a simple Django app written in Python that utilizes the
+            library Pafy to retrieve metadata from Youtube. Musikit was
+            developed in a day as a weekend deep-dive into Python and Django.
+          </p>
+          <p class="mb-4">Technologies: Python, Django, Postgresql, Pafy</p>
+          <div class="flex justify-end">
+            <button
+              onclick="closeModal('musikit-modal')"
+              class="bg-gray-300 px-4 py-2 rounded hover:bg-gray-400"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Samuels Tennisport Modal -->
+      <div
+        id="samuelstennisport-modal"
+        class="fixed inset-0 flex items-center justify-center hidden z-50"
+      >
+        <div class="bg-white rounded-lg p-8 max-w-2xl w-full">
+          <h3 class="text-2xl font-bold mb-4">Samuels Tennisport</h3>
+          <p class="mb-4">
+            This app is designed to manage customers and track their rackets.
+            Customers are alerted whenever a registered racket is due for a
+            string change.
+          </p>
+          <p class="mb-4">
+            Technologies: Ruby, Rails, Postgresql, Bootstrap, JavaScript, AJAX
+          </p>
+          <div class="flex justify-end">
+            <button
+              onclick="closeModal('samuelstennisport-modal')"
+              class="bg-gray-300 px-4 py-2 rounded hover:bg-gray-400"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- Close the container div -->
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12 py-8">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-4 md:mb-0">
+            <p>
+              &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              CJ Wilson
+            </p>
+          </div>
+          <div class="flex space-x-4">
+            <a
+              href="mailto:christopher.wilson.jr@gmail.com"
+              class="hover:text-gray-300"
+            >
+              <i class="fa fa-envelope"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/cjwilsonjr"
+              class="hover:text-gray-300"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/cjwilsonjr" class="hover:text-gray-300">
+              <i class="fa-brands fa-github-alt"></i>
+            </a>
+            <a
+              href="https://twitter.com/heycjwilson"
+              class="hover:text-gray-300"
+            >
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function openModal(modalId) {
+        document.getElementById(modalId).classList.remove("hidden");
+        document.getElementById("modal-overlay").classList.remove("hidden");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeModal(modalId) {
+        document.getElementById(modalId).classList.add("hidden");
+        document.getElementById("modal-overlay").classList.add("hidden");
+        document.body.style.overflow = "auto";
+      }
+
+      function closeAllModals() {
+        const modals = document.querySelectorAll('[id$="-modal"]');
+        modals.forEach((modal) => {
+          if (!modal.classList.contains("hidden")) {
+            closeModal(modal.id);
+          }
+        });
+      }
+
+      // Close modal when clicking outside
+      document.addEventListener("click", function (event) {
+        if (
+          event.target.classList.contains("fixed") &&
+          event.target.id.endsWith("-modal")
+        ) {
+          closeAllModals();
+        }
+      });
+
+      // Close modal when pressing Escape key
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          closeAllModals();
+        }
+      });
+
+      // Smooth scrolling with offset
+      function smoothScroll(target, offset) {
+        const element = document.querySelector(target);
+        const navbarHeight = document.getElementById("navbar").offsetHeight;
+        const targetPosition =
+          element.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = targetPosition - navbarHeight - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+
+      // Add click event listeners to navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = this.getAttribute("href");
+          smoothScroll(target, 16); // 16px offset to account for padding
+        });
+      });
+    </script>
   </body>
 </html>
